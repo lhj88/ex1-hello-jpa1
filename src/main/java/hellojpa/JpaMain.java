@@ -28,6 +28,8 @@ public class JpaMain {
             member.setTeam(team);
             em.persist(member);
 
+            // team.getMembers().add(member); // Member::chageTeam으로 이동
+
             em.flush();
             em.clear();
 
